@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilização do corpo da página */
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar fixa no topo */
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-bottom: 2px solid cyan;
+}
+
+/* Seção Home */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil img {
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.perfil h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.perfil p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Botão interativo */
+.btn {
+    background: rgb(81, 204, 242);
+    color: black;
+    margin-top: 100px !important; /* Força a regra */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px rgb(248, 249, 250);
+    transform: scale(1.05);
+}
+
+/* Seções gerais */
+section {
+    padding: 80px 20px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.projeto {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.redes-sociais a {
+    font-size: 60px; /* Tamanho dos ícones */
+    color: #555; /* Cor padrão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%; 
+   
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.2);
+    color: #00bfff; /* Muda a cor do ícone */
+    box-shadow: 0 0 20px rgb(81, 204, 242)
+    
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.habilidades i {
+    font-size: 60px; /* Tamanho dos ícones */
+    color: #555; /* Cor padrão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    padding: 10px;
+    border-radius: 50%; /* Para deixar o brilho arredondado */
+}
+
+.habilidades i:hover {
+    transform: scale(1.2);
+    color: #00bfff; /* Muda a cor do ícone */
+    box-shadow: 0 0 20px rgb(81, 204, 242); /* Efeito de luz ao redor */
+}
+
+.universidades {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; /* Um abaixo do outro */
+    align-items: center; /* Centraliza na tela */
+    gap: 20px; /* Espaço entre os blocos */
+}
+
+.formacao {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto na mesma linha */
+    gap: 15px; /* Espaço entre o ícone e o texto */
+    max-width: 600px; /* Define um limite para o texto */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.uni-icon {
+    width: 80px; /* Ajuste conforme necessário */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uni-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+}
+
+p {
+    font-size: 16px;
+    color: #fff; /* Altere a cor conforme o fundo do seu site */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .perfil img {
+        width: 120px;
+    }
+
+    .perfil h1 {
+        font-size: 24px;
+    }
+
+    .perfil p {
+        font-size: 16px;
+    }
+}
+
